@@ -6,8 +6,13 @@ theme:
     scheme: default
     primary: indigo
     accent: deep orange
-
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - extra.js
 markdown_extensions:
+  - admonition
+  - pymdownx.details
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
