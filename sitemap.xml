@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://mydomain.org/mysite/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/diagrams/dfd/Users-detail/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/diagrams/dfd/dfd1/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/diagrams/seq/seq1/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/diagrams/wireframe/users/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/diagrams/wireframe/Users/Users-detail/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/diagrams/wireframe/Users/Users-list/</loc>
+         <lastmod>2025-01-02</lastmod>
+    </url>
+</urlset>
