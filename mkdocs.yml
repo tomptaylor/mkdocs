@@ -1,19 +1,26 @@
 site_name: My site
 site_url: https://mydomain.org/mysite
+plugins:
+  - mkdocs-graphviz
 theme:
   name: material
+  font:
+    text: Merriweather Sans
   palette:
-    scheme: default
+    scheme: slate
     primary: indigo
     accent: deep orange
+
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - extra.js
+  - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js
 markdown_extensions:
   - admonition
   - pymdownx.details
   - attr_list
+  - mkdocs_graphviz
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -23,5 +30,12 @@ markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
+          # Use custom CSS to override Mermaid colors
+          style: |
+            .node {
+              fill: #FF0000;
+              stroke: #00FF00;
+            }
+          theme: forest
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
