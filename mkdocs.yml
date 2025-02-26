@@ -1,7 +1,5 @@
 site_name: My site
 site_url: https://mydomain.org/mysite
-plugins:
-  - mkdocs-graphviz
 theme:
   name: material
   font:
@@ -15,12 +13,13 @@ extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - extra.js
-  - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js
+  - panzoom.min.js
+  - d2-panzoom.js
+  - https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.1/dist/svg.min.js
 markdown_extensions:
   - admonition
   - pymdownx.details
   - attr_list
-  - mkdocs_graphviz
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
