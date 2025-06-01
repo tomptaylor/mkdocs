@@ -16,6 +16,10 @@ extra_javascript:
   - panzoom.min.js
   - d2-panzoom.js
   - https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.1/dist/svg.min.js
+  - javascripts/enable-video-controls.js
+plugins:
+  - glightbox
+  - d2
 markdown_extensions:
   - admonition
   - pymdownx.details

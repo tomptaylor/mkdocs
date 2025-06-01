@@ -1,0 +1,64 @@
+Main: "Solid.js App" {
+    shape: circle
+    style.fill: "#ADD8E6"
+}
+
+# Center the main topic
+# Main: "Solid.js App" {
+#     style.fill: "#ADD8E6"
+#     style.stroke-width: 2
+# }
+
+# Left Side Branches
+direction: left
+"Components" {
+    style.fill: "#FFD700"
+}
+"State Management" {
+    style.fill: "#32CD32"
+}
+
+# Right Side Branches
+"Routing" {
+    style.fill: "#FF6347"
+}
+Routing.shape: oval
+"Performance Optimizations" {
+    style.fill: "#9370DB"
+}
+
+# Subtopics - Components
+"Header"
+"Sidebar"
+"Main Content"
+
+# Subtopics - State Management
+"Signals"
+"Stores"
+
+# Subtopics - Routing
+"Page1"
+"Page2"
+
+# Subtopics - Performance Optimizations
+"Memoization"
+"Lazy Loading"
+
+# Arrows (Left Side)
+# the arrows are going left so the outer node need to be first (SB)
+"Header" - "Components"
+"Components" <- "Sidebar"
+"Components" <- "Main Content"
+Main <- "Components"
+Main <- "State Management"
+
+"State Management" <- "Signals"
+"State Management" <- "Stores"
+
+# Arrows (Right Side)
+Main -- "Routing"
+Main -> "Performance Optimizations"
+"Routing" -> "Page1"
+"Routing" -> "Page2"
+"Performance Optimizations" -> "Memoization"
+"Performance Optimizations" -> "Lazy Loading"
