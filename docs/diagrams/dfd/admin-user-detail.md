@@ -1,0 +1,1 @@
+--8<-- "diagrams/dfd/admin.md"

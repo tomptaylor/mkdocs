@@ -1,0 +1,21 @@
+mac: {
+    cloudflared
+}
+
+cf: CloudFlare {
+    shape: cloud
+}
+wk : worker {
+    hono : {
+        zod
+    }
+    sqlite : {
+        shape: cylinder
+    }
+}
+mac -> cf
+cf->wk
+wk.hono.zod->wk.sqlite
+
+
+
