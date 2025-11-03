@@ -21,8 +21,8 @@ plugins:
   - glightbox
   - d2
 markdown_extensions:
-  - markdown_include.include:
-      base_path: docs
+  # - markdown_include.include:
+  #     base_path: docs
   - admonition
   - pymdownx.details
   - attr_list
