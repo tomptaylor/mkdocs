@@ -1,0 +1,71 @@
+direction: right
+
+# Main topic in the center
+Main: "Solid.js App" {
+
+    style.fill: "#ADD8E6"
+
+    style.stroke-width: 2
+}
+
+# Left Branches
+"Components" {
+    style.fill: "#FFD700"
+}
+"State Management" {
+    style.fill: "#32CD32"
+}
+
+# Right Branches
+"Routing" {
+    style.fill: "#FF6347"
+}
+"Performance Optimizations" {
+    style.fill: "#9370DB"
+}
+
+# Subtopics - Components
+"Header"
+"Sidebar"
+"Main Content"
+
+# Subtopics - State Management
+"Signals"
+"Stores"
+
+# Subtopics - Routing
+"Page1"
+"Page2"
+
+# Subtopics - Performance Optimizations
+"Memoization"
+"Lazy Loading"
+
+# Positioning: Force a radial layout
+Main <-> "Components" {
+}
+main.curve: smooth
+Main <-> "State Management" {
+}
+State Management.curve: smooth
+Main <-> "Routing" {
+
+}
+Routing.curve: smooth
+Main <-> "Performance Optimizations" {
+
+}
+main.curve: smooth
+# Subtopics - Spread outward from main branches
+"Components" <-> "Header"
+"Components" <-> "Sidebar"
+"Components" <-> "Main Content"
+
+"State Management" <-> "Signals"
+"State Management" <-> "Stores"
+
+"Routing" <-> "Page1"
+"Routing" <-> "Page2"
+
+"Performance Optimizations" <-> "Memoization"
+"Performance Optimizations" <-> "Lazy Loading"
