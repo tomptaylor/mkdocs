@@ -1,7 +1,5 @@
 site_name: My site
 site_url: https://mydomain.org/mysite
-plugins:
-  - mkdocs-graphviz
 theme:
   name: material
   font:
@@ -20,7 +18,6 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - attr_list
-  - mkdocs_graphviz
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
