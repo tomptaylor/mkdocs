@@ -1,0 +1,4 @@
+mkdocs
+mkdocs-material # If you are using the Material for MkDocs theme
+mkdocs-macros-plugin # If you are using this plugin
+markdown-include
